@@ -1,0 +1,16 @@
+{
+    "name": "antipuesto/gs",
+    "description": "Basic Student Grading System",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Antipuesto\\Gs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Antipuesto"
+        }
+    ],
+    "require": {}
+}
