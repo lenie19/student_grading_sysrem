@@ -1,9 +1,10 @@
 <?php 
 
-use Antipuesto\Gs\StudentModel
+use Antipuesto\Gs\StudentModel;
 
 require 'vendor/autoload.php';
 
 $student = new StudentModel;
-var_dump($student);
+$listofstudents = $student->read();
+print_r($listofstudents);
 
