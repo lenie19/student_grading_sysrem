@@ -1,6 +1,6 @@
 <?php
 
-namespace Antipuesto\Gs\Core
+namespace Antipuesto\Gs\Core;
 
 class Database {
     protected function __construct()
@@ -10,9 +10,9 @@ class Database {
         $user = 'root' ;
         $pass = '';
         //mysqli connection
-        $this-> conn = new \mysqli($hist, $user, $pass, $db);
+        $this-> conn = new \mysqli($host, $user, $pass, $db);
         if ($this-> conn ->connect_error) {
-            die ("connection failed: ", $this->conn->connection_error);
+            die ("connection failed: ". $this->conn->connection_error);
         }
     }
 }
